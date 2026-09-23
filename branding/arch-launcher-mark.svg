@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Arch Launcher mark</title>
+  <desc id="desc">The Arch Creator red arch and star adapted into a game-launcher badge with a gold play spark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24211d"/>
+      <stop offset="1" stop-color="#111214"/>
+    </linearGradient>
+    <linearGradient id="arch" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8b0000"/>
+      <stop offset=".55" stop-color="#e6193c"/>
+      <stop offset="1" stop-color="#ff2b4f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#a47c3f"/>
+      <stop offset=".5" stop-color="#e1bd78"/>
+      <stop offset="1" stop-color="#fff0b0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#bg)" stroke="#40372b" stroke-width="4"/>
+  <path d="M58 196 103 70q7-15 16 0l45 126" fill="none" stroke="url(#arch)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M119 177 153 143l34 34-34 34z" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linejoin="round" opacity=".95"/>
+  <path d="m58 178 6 17 18 1-14 11 5 18-15-10-15 10 5-18-14-11 18-1z" fill="url(#arch)" filter="url(#glow)"/>
+  <circle cx="195" cy="62" r="4" fill="#e1bd78" opacity=".8"/>
+  <circle cx="210" cy="78" r="2.5" fill="#e6193c" opacity=".8"/>
+</svg>
